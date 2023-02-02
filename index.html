@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Module F2 test</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <button id="img-1" onclick="displayForm()"><img class="img" src="/a-puppy-1642002.jpg" alt="dog1" ></button>
+        </div>
+ 
+        <div>
+            <button id="img-2" onclick="displayInfo()"><img class="img" src="/cute-puppies-1357088.jpg" alt="dog2" ></button>
+        </div>
+ 
+        <div>
+            <button id="img-3" onclick="displayDice()"><img class="img" src="/dog-s-face-1641634.jpg" alt="dog3" ></button>
+        </div>
+ 
+        <div>
+            <button id="img-4" onclick="generateCouponCode()"><img class="img" src="/puppy-1250141.jpg" alt="dog4" ></button>
+        </div>
+    </div> 
+    
+    <div class="form-Group hidden" id="form">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+ 
+        <label for="userName">User Name</label>
+        <input type="text" id="userName" required>
+ 
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+ 
+        <button type="submit" onclick="submitInfo()">Submit</button>
+    </div>
+
+    <div class="displayformInfo hidden" id="displayInfo">
+        <p>Your info is: <span id="info"></span></p>
+    </div>
+
+    <div class="diceWthScore hidden" id="diceWithScore">
+        <p>Attempts left : <span id="attemptsLeft">0</span></p>
+        <div>
+            <button id="dice-Image" onclick="diceClick()"><img class="img" src="/dice-illustration-1152801.jpg" alt="diceImage"></button>
+            <p>Remaining Dice Clicks: <span id="diceClicks">3</span></p>
+            <p>Your total score is: <span id="score">0</span></p>
+        </div>
+    </div>
+
+    <div class="hidden" id="congratsImage">
+        <img class="img" src="/pexels-olia-danilevich-8127309.jpg" alt="congratsImage" >
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
